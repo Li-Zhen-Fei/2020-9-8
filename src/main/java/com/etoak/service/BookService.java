@@ -9,9 +9,11 @@ public class BookService {
 
     @Autowired
     private BookDao dao;
+
     public void setDao(BookDao dao) {
         this.dao = dao;
     }
+
     public void testService() {
         System.out.println("service执行");
         dao.testDao();

@@ -6,12 +6,14 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class BookController {
+
     @Autowired
     private BookService service;
 
     public void setService(BookService service) {
         this.service = service;
     }
+
     public void gogo(){
         System.out.println("Controllerִ执行");
         service.testService();
